@@ -29,9 +29,16 @@ Assuming you have Python already:
 
 .. prompt:: console
 
-    $ pip install sphinx
+    $ git clone https://github.com/purduecyan/docsy
+    $ cd docsy
 
-Create a directory inside your project to hold your docs:
+Create a python virtual environment and install the package:
+    
+.. prompt:: console
+    $ python3 -m venv .venv
+    $ source .venv/bin/activate
+    $ pip install .
+
 
 .. prompt:: console
 
