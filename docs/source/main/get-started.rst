@@ -22,72 +22,34 @@ has many great features for writing technical documentation including:
 
 If you want to learn more about how to create your first Sphinx project, read on.
 
-Quick start
------------
+Building Docsy
+--------------
 
-Assuming you have Python already:
+Assuming you have Python, pip and virtual environment support installed, clone this repository:
 
 .. prompt:: console
 
     $ git clone https://github.com/purduecyan/docsy
     $ cd docsy
 
+
 Create a python virtual environment and install the package:
     
 .. prompt:: console
+
     $ python3 -m venv .venv
     $ source .venv/bin/activate
     $ pip install .
 
 
-.. prompt:: console
-
-    $ cd /path/to/project
-    $ mkdir docs
-
-Run ``sphinx-quickstart`` in there:
+This will install Sphinx and some other useful packages. You can now build the documentation
+for this project by running:
 
 .. prompt:: console
 
     $ cd docs
-    $ sphinx-quickstart
-
-This quick start will walk you through creating the basic configuration; in most cases, you
-can just accept the defaults. When it's done, you'll have an ``index.rst``, a
-``conf.py`` and some other files. Add these to revision control.
-
-Now, edit your ``index.rst`` and add some information about your project.
-Include as much detail as you like. Build them to see how they look:
-
-.. prompt:: console
-
     $ make html
 
-Your ``index.rst`` has been built into ``index.html``
-in your documentation output directory (typically ``_build/html/index.html``).
-Open this file in your web browser to see your docs.
-
-
-Building this documentation
----------------------------
-
-To access this documentation offline, install the following python packages. We recommend using a python virtual
-environment (i.e., *venv*).
-
-.. prompt:: console
-
-    $ pip install sphinx
-    $ pip install sphinx-prompt
-    $ pip install sphinx-rtd-theme
-
-Clone the CYAN Lab documentation repository in your project directory to hold your docs:
-
-.. prompt:: console
-
-    $ cd /path/to/project
-    $ git clone https://github.com/purduecyan/rtfm
-    $ cd rtfm
-    $ make html
 
 The documentation will be built into your ``build/html/`` directory.
 Open the ``index.html`` file in your web browser to see your docs.
